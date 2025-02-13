@@ -6,7 +6,7 @@ class ProductRepository {
         this.products = new Map([
             ["09", new Product("09", "CREDIT_CARD", "Gem Visa", "v1")],
             ["10", new Product("10", "CREDIT_CARD", "28 Degrees", "v1")],
-            ["11", new Product("11", "PERSONAL_LOAN", "MyFlexiPay", "v2")],
+            ["111", new Product("111", "PERSONAL_LOAN", "MyFlexiPay", "v2")],
         ]);
     }
 
