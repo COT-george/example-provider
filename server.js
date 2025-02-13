@@ -9,7 +9,9 @@ const init = () => {
     app.use(cors());
     app.use(routes);
     app.use(authMiddleware);
-    return app.listen(port, () => console.log(`Provider API listening on port ${port}...`));
+    if (process.NODE_ENV !== 'test') {
+        return app.listen(port, () => console.log(`Provider API listening on port ${port}...`));
+    }
 };
 
 init();
